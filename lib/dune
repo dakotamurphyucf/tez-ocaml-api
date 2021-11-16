@@ -1,0 +1,27 @@
+(library
+ (name SyncAPIV1)
+ (libraries tezos-base
+            tezos-base.unix
+            tezos-rpc-http-client
+	    tezos-rpc-http-client-unix
+            tezos-shell-services
+            tezos-client-base
+            tezos-client-commands
+            tezos-micheline
+            str
+            tezos-client-009-PsFLoren-commands-registration
+	    
+
+	    tezos-stdlib-unix
+            tezos-client-base-unix)
+ (flags (:standard -open Tezos_base__TzPervasives
+                   -open Tezos_rpc_http_client
+		   -open Tezos_rpc_http_client_unix
+                   -open Tezos_stdlib_unix
+                   -open Tezos_shell_services
+                   -open Tezos_client_base
+                   -open Tezos_client_commands
+                   -open Tezos_client_base_unix
+                   -open Tezos_micheline
+                   -linkall))
+)

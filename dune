@@ -1,0 +1,9 @@
+(executables
+ (names my_exe)
+ (libraries SyncAPIV1
+ 	    lwt
+	    lwt.unix
+	    unix)
+
+  (flags (:standard -open Lwt
+  	 	     -linkall)))
